@@ -2,12 +2,12 @@
 
 A **Reddit clone** built with the **MERN stack** (MongoDB, Express, React, Node.js) and refactored into **TypeScript** with multiple other tools for a modern, scalable architecture.
 ## features
--- **Create Account / Login** – Fully styled with Material UI and built with React Hook Form (RHF) for validation and form handling 
--- **Authentication** – Session-based login and registration 
--- **Home Page** – Displays posts feed with order adjustment buttons
--- **Search** – Search posts base on keywords
--- **Backend Refactor** – Cleaner structure for scalability 
--- **Upcoming**:
+- **Create Account / Login** – Fully styled with Material UI and built with React Hook Form (RHF) for validation and form handling
+- **Authentication** – Session-based login and registration 
+- **Home Page** – Displays posts feed with order adjustment buttons
+- **Search** – Search posts base on keywords
+- **Backend Refactor** – Cleaner structure for scalability 
+- **Upcoming**:
   - GUI for creation of posts, comments, communities
   - Upvotes & downvotes system
   - User profile pages
