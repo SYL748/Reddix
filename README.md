@@ -6,7 +6,12 @@ A **Reddit clone** built with the **MERN stack** (MongoDB, Express, React, Node.
 - **Authentication** – Session-based login and registration 
 - **Home Page** – Displays posts feed with order adjustment buttons
 - **Search** – Search posts base on keywords
-- **Backend Refactor** – Cleaner structure for scalability 
+- **Backend Refactor** – Cleaner structure for scalability
+- **Backend APIs** – Most core endpoints are implemented and tested, including:
+  - Create & delete posts
+  - Create & delete comments
+  - Create & delete communities
+  - Authentication & session management
 - **Upcoming**:
   - GUI for creation of posts, comments, communities
   - Upvotes & downvotes system
