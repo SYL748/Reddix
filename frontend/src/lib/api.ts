@@ -1,5 +1,5 @@
 import API from "../config/apiClient";
-import type { GetCommunityResponse } from "../types/Community";
+import type { Community, GetCommunityResponse } from "../types/Community";
 import type { LinkFlair } from "../types/LinkFlair";
 import type { Order } from "../types/Order";
 import type { Post } from "../types/Post";
@@ -36,3 +36,9 @@ export async function getPost(params: { order: Order; search?: string }): Promis
     })
     return Array.isArray(res) ? res : []
 }
+export const getCommunityById = async (id:string): Promise<Community> => 
+    API.get(`/community/${id}`)
+export const getPostByCommunityId = async (id:string, order:Order): Promise<Post[]> =>
+    API.get(`/post/community/${id}`, {
+        params:{order}
+    })

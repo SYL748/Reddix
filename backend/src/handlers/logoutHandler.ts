@@ -1,7 +1,7 @@
 import catchError from "../utils/catchError";
 
-const logoutHandler = catchError(async(req, res) => {
-    req.session.destroy(err => {
+const logoutHandler = catchError(async (req, res) => {
+  req.session.destroy(err => {
     res.clearCookie("connect.sid", {
       httpOnly: true,
       sameSite: "lax",

@@ -38,8 +38,7 @@ const createCommentHandler = catchError(async (req: Request<{}, {}, CommentBody>
     }
     await User.findByIdAndUpdate(
         req.session.userId,
-        { $push: { commentIDs: { $each: [newCommentObj._id] } } },
-        { new: false }
+        { $push: { commentIDs: { $each: [newCommentObj._id] } } }
     )
     return res.status(200).json(newCommentObj)
 })

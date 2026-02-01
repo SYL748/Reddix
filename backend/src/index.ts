@@ -1,4 +1,4 @@
-import express, { Request, request, Response } from "express"
+import express from "express"
 import cors from "cors"
 import session from "express-session"
 import connectToDatabase from "./config/db";
@@ -8,7 +8,6 @@ import errorHandler from "./middleware/errorMiddleware";
 import postRoute from "./routes/post";
 import communityRoute from "./routes/community";
 import commentRoute from "./routes/comment";
-import catchError from "./utils/catchError";
 import LinkFlair from "./model/LinkFlair";
 
 declare module "express-session" {

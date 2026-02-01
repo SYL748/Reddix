@@ -10,7 +10,6 @@ const escapeRegex = (str: string): string =>
 
 const fetchPostHandler = catchError(async (req: Request, res: Response) => {
     const { order, search } = req.query as { order: Order, search?: string }
-    console.log(search)
     appAssert(order, 400, "No Ordering Mentioned")
     const match: any = {}
     if (search && search.trim()) {
