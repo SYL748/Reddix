@@ -1,5 +1,6 @@
 
-
-export default function PostDetailPage() {
-  return <div>Post Detail Page Under Progress</div>;
+const PostDetailPage = () => {
+    return <div>Post Detail Page Under Progress</div>
 }
+
+export default PostDetailPage
